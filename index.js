@@ -197,6 +197,9 @@ class Factors {
 		document.getElementById("factors-empty").addEventListener("click", () => {
 			this.clear();
 		});
+
+		const values = [{"index":"3opr3t","name":"min-roi","type":"classic","weight":"20","effect":true},{"index":"urrdtx","name":"curr-roi","type":"classic","weight":"5","effect":true},{"index":"pfsrxa","name":"timep","type":"median","weight":"6","effect":true},{"index":"o9t0ee","name":"positivity","type":"median","weight":"10","effect":true}];
+		this.set(values);
 	}
 
 	set(values) {
