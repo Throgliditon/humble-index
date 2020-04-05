@@ -1,0 +1,425 @@
+body {
+	margin: 0;
+	background: rgb(41, 41, 41);
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-family: "raleway";
+	font-weight: 300;
+	color: rgb(230, 230, 230);
+	width: 100%;
+	margin: 50px 0 30px;
+	text-align: center;
+	font-size: 80px;
+}
+
+.factors-header {
+	display: flex;
+	margin: 20px 0 5px;
+	margin-left: 49px;
+	justify-content: space-between;
+}
+
+.factors-title {
+	font-family: "raleway";
+	font-weight: 300;
+	font-size: 20px;
+	height: 24px;
+	color: rgb(230, 230, 230);
+}
+
+.factors-options {
+	display: flex;
+}
+
+.factors-option {
+	height: 16px;
+	width: 16px;
+	padding: 3px;
+	margin: 1px;
+	text-align: center;
+	border: 1px solid rgb(41, 41, 41);
+	color: rgb(230, 230, 230);
+	font-family: "raleway";
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	transition: .5s border;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#factors-1, #factors-2, #factors-3 {
+	line-height: 14px;
+}
+
+.factors-option:hover {
+	border: 1px solid rgb(230, 230, 230);
+}
+
+.factors-names {
+	display: flex;
+	font-family: "raleway";
+	font-weight: 300;
+	font-size: 13px;
+	color: rgb(230, 230, 230);
+}
+
+.name-name {
+	margin-left: 50px;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.type-name {
+	margin-left: 12px;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.weight-name {
+	margin-left: 12px;
+	flex-basis: 0;
+	flex-grow: 2;
+}
+
+.effect-name {
+	width: 139px;
+}
+
+.factors {
+	display: flex;
+	flex-direction: column;
+}
+
+.factor {
+	display: flex;
+	height: 26px;
+	flex-wrap: wrap;
+}
+
+.factor-icon {
+	width: 41px;
+	padding-right: 5px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.factor-icon svg {
+	fill: rgb(120, 120, 120);
+	padding: 6px 0;
+}
+
+.factor-icon.add svg {
+	padding: 6px 0;
+}
+
+.factor select {
+	border: 1px solid rgb(150, 150, 150);
+	background: transparent;
+	color: rgb(230, 230, 230);
+	font-size: 12px;
+	height: 20px;
+	margin: 3px;
+	font-family: 'raleway';	
+	letter-spacing: 1px;
+	padding-left: 5px;
+	flex-grow: 1;
+	flex-basis: 0;
+	min-width: 0;
+}
+
+.factor option {
+	background: rgb(41, 41, 41);
+	border: 1px solid rgb(150, 150, 150);
+	letter-spacing: 2px;
+	padding-top: 1px;
+	font-size: 11px;
+}
+
+.factor-weight {
+	flex-grow: 2;
+	flex-basis: 0;
+	min-width: 100px;
+	display: flex;
+}
+
+.factor-weight span {
+	font-family: "raleway";
+	font-weight: 300;
+	font-size: 12px;
+	color: rgb(230, 230, 230);
+	line-height: 26px;
+	text-align: center;
+	width: 15px;
+	padding-left: 3px;
+}
+
+.factor-weight input {
+	-webkit-appearance: none;
+	height: 12px;
+	margin-top: 8px;
+	background: rgb(70, 70, 70);
+	outline: none;
+	opacity: 0.7;
+	transition: opacity .2s;
+	border-radius: 4px;
+	flex-grow: 1;
+}
+  
+.factor-weight input:hover {
+	opacity: 1;
+}
+  
+.factor-weight input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	background: rgb(230, 230, 230);
+	cursor: pointer;
+}
+  
+.factor-weight input::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	background: rgb(230, 230, 230);
+	cursor: pointer;
+}
+
+.factor-effect {
+	font-family: "raleway";
+	color: rgb(230, 230, 230);
+	font-size: 12px;
+	line-height: 26px;
+	display: flex;
+	margin: 0 5px;
+}
+
+.switch {
+	margin: 3px 3px 0;
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	border-radius: 6px;
+	opacity: 0.7;
+	transition: opacity .2s;
+}
+
+.switch:hover {
+	opacity: 1;
+}
+  
+.switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+  
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #b71c1c;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 4px;
+}
+  
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 2px;
+	bottom: 2px;
+	background-color: rgb(230, 230, 230);
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 3px;
+}
+  
+input:checked + .slider {
+	background-color: #33691E;
+}
+  
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.chart, .ct-chart {
+	height: 400px;
+}
+
+.chart-middle {
+	position: relative;
+	color: rgb(230, 230, 230);
+	font-family: "raleway";
+	font-size: 15px;
+	top: -221px;
+	left: 20px;
+}
+
+.chart-better {
+	position: relative;
+	color: rgb(230, 230, 230);
+	font-family: "raleway";
+	font-size: 15px;
+	top: -414px;
+	left: 6px;
+}
+
+.chart-worse {
+	position: relative;
+	color: rgb(230, 230, 230);
+	font-family: "raleway";
+	font-size: 15px;
+	top: -81px;
+	left: 4px;
+}
+
+.ct-label {
+	color: rgb(230, 230, 230);
+	font-family: "raleway";
+	cursor: pointer;
+}
+
+.ct-grids line {
+	stroke: rgb(230, 230, 230);
+  }
+
+.ct-series-a .ct-line {
+    stroke: rgb(230, 230, 230);
+}
+
+.ct-series-a.first {
+	animation: dash 3s linear forwards;
+}
+
+#games-popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(50, 50, 50);
+	color: rgb(230, 230, 230);
+	font-family: "raleway";
+	font-size: 15px;
+	width: 200px;
+	padding: 8px 12px;
+}
+
+#games-popup.hide {
+	display: none;
+}
+ 
+@keyframes dash {
+	to {
+	   stroke-dashoffset: 0;
+	}
+}
+
+.factor-template {
+	display: none;
+}
+
+.footer {
+	margin-top: 30px;
+	color: rgb(230, 230, 230);
+	font-family: "open sans";
+	font-size: 16px;
+	padding: 0 50px 0 100px;
+}
+
+@media screen and (max-width: 1010px) {
+	.factors-header {
+		margin-right: 10px;
+	}
+
+	.factor {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.title {
+		font-size: 60px;
+	}
+
+	.chart, .ct-chart {
+		height: 300px;
+	}
+
+	.factors-names {
+		display: none;
+	}
+
+	.factor {
+		margin: 0 10px 0 47px;
+		height: auto;
+		flex-wrap: wrap;
+	}
+
+	.factor-icon {
+		position: relative;
+		left: -20px;
+		top: 15px;
+		width: 0;
+		padding: 0;
+	}
+
+	.factor select {
+		width: calc(50% - 6px);
+		flex-shrink: 1;
+		flex-grow: 0;
+		flex-basis: auto;
+	}
+
+	.chart-middle {
+		top: -171px;
+	}
+
+	.chart-better {
+		top: -314px;
+	}
+
+	.footer {
+		padding: 0 10px 0 50px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.title {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.title {
+		font-size: 40px;
+	}
+
+	.footer {
+		font-size: 15px;
+	}
+}

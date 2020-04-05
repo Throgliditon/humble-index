@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Humble Index</title>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">Humble Index</div>
+			<div class="chart">
+				<div class="ct-chart ct-perfect-fourth"></div>
+				<div class="chart-middle">100</div>
+				<div class="chart-better">better</div>
+				<div class="chart-worse">worse</div>
+			</div>
+			<div class="factors-header">
+				<div class="factors-title">Factors</div>
+				<div class="factors-options">
+					<div class="factors-option" id="factors-1">1</div>
+					<div class="factors-option" id="factors-2">2</div>
+					<div class="factors-option" id="factors-3">3</div>
+					<div class="factors-option" id="factors-copy">C</div>
+					<div class="factors-option" id="factors-paste">P</div>
+					<div class="factors-option" id="factors-empty">E</div>
+				</div>
+			</div>
+			<div class="factors-names">
+				<div class="name-name">Name</div>
+				<div class="type-name">Type</div>
+				<div class="weight-name">Weight</div>
+				<div class="effect-name">Effect</div>
+			</div>
+			<div class="factors">
+				<div class="factor" id="factor-add">
+					<div class="factor-icon add" id="factor-add-button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M24 9h-9v-9h-6v9h-9v6h9v9h6v-9h9z"/></svg></div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>Using Humble Index you can create an index for the past Humble Monthly's and now Humble Choices. Instead of using a single index graph as reference if Humble Choice has "ruined" <i>your</i> monthly Humble Bundle, you can now create <i>your</i> own index by choosing <i>your</i> own factors.</p>
+				<p>A short explenation of how everything works: in the top of the screen should be the index graph. The dotted line in the middle is the index line, with the value 100. The index line will be relative to this dotted line. Higher values mean that months bundle scored better and lower values that it scored worse. Under the factors header you can add, change and remove factors. Each factor has a name, describing what factor it is; the type, e.g. mean and median; a weight, which is a number from 1 to 99 implying it's weight for this index and lastly an effect. With the effect you can change what impact the factor will have on the index. An example would be using a negative effect for bundles that have DLCs. This would worsen the score of monthly's that included games with dlcs. You can also copy and paste your factors using the C and P buttons. With the E button you can empty your factors list. Lastly, you can also click on a month on the x-axis to set the base position to that month</p>
+				<p>There are a few factor presets that I've created to try to analyze a few of the popular complaints about the recent monthly's. You can access them to the left of the CPE buttons. Preset 1 describes the value of the games in that month's monthly. Preset 2 the quality of each month's bundle. With preset 3 I've <i>tried</i> to model the indieness of the monthly bundles.</p>
+				<p>Have fun creating your own indeces. Throgliditon (c) 2020</p>
+			</div>
+		</div>
+		<div id="games-popup" class="hide"></div>
+
+		<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+		<script src="data.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
