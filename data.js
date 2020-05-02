@@ -430,5 +430,29 @@ const humbleData = [
 			"has-dlcs": [0.08],
 			"amount": [12]
 		}
+	},
+	{
+		name: "May",
+		games: ["Jurassic World Evolution", "XCOM® 2", "Rise of Industry", "Niche - a genetics survival game", "Warhammer 40,000: Gladius - Relics of War", "The Swords of Ditto: Mormo's Curse", "WARSAW", "Heave Ho", "MO:Astray", "NEOVERSE", "Chess Ultra", "Horace"],
+		choice: true,
+		data: {
+			"min-roi": [81.7 / 11.11, 76.78 / 18.51, 34.54 / 13.88],
+			"curr-roi": [155.76 / 11.11, 143.96 / 18.51, 64.42 / 13.88],
+
+			"curr-price": [14.34, 12.49, 172.11, 7.36, 28.84],
+			"min-price": [7.07, 7.11, 84.82, 0.00, 12.75],
+			"age": [50449800000.00, 44236800000.00, 605397600000.00, 6303600000.00, 133743600000.00],
+			"time": [12.56, 9.00, 100.50, 3.00, 31.50],
+			"timep": [19.71, 15.00, 138.00, 5.00, 44.50],
+			"timepp": [48.25, 42.50, 289.50, 12.50, 100.00],
+			"positivity": [82.48, 82.56, 58.33, 95.90],
+			"peak-players": [847.17, 57.44, 10165.98, 2.53, 7121.99],
+			"average-players": [16861.92, 961.00, 202343.00, 40.00, 132677.00],
+			
+			"is-sequal": [0.25],
+			"has-sequal": [0.17],
+			"has-dlcs": [0.42],
+			"amount": [12]
+		}
 	}
 ]
