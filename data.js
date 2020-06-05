@@ -454,5 +454,29 @@ const humbleData = [
 			"has-dlcs": [0.42],
 			"amount": [12]
 		}
+	},
+	{
+		name: "June",
+		games: ["Supraland", "GRID - Ultimate Edition", "Hellblade: Senua's Sacrifice", "The Messenger", "Barotrauma", "Felix The Reaper", "Men of War: Assault Squad 2 - War Chest Edition", "Stygian: Reign of the Old Ones", "Remnants of Naezith", "Overload", "The Stillness of the Wind", "The King's Bird"],
+		choice: true,
+		data: {
+			"min-roi": [79.69 / 11.11, 76.15 / 18.51, 40.88 / 13.88],
+			"curr-roi": [146.09 / 11.11, 137.70 / 18.51, 73.65 / 13.88],
+
+			"curr-price": [13.21, 10.46, 158.57, 4.99, 42.99],
+			"min-price": [6.85, 5.25, 82.21, 0.00, 18.15],
+			"age": [58542600000.00, 48771000000.00, 702511200000.00, 20044800000.00, 191203200000.00],
+			"time": [15.77, 10.00, 173.50, 3.00, 67.50],
+			"timep": [14.94, 14.00, 134.50, 3.50, 30.00],
+			"timepp": [21.69, 20.00, 173.50, 4.50, 41.00],
+			"positivity": [85.64, 88.77, 63.63, 97.99],
+			"peak-players": [210.31, 37.78, 2523.72, 1.20, 1670.92],
+			"average-players": [2011.36, 1028.00, 22125.00, 17.00, 9720.00],
+			
+			"is-sequal": [0.25],
+			"has-sequal": [0],
+			"has-dlcs": [0.25],
+			"amount": [12]
+		}
 	}
 ]
